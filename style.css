@@ -1,0 +1,315 @@
+/* ---------------------
+   GLOBAL & PHONE FRAME
+---------------------- */
+:root{
+  --bg:#f4f0ee;         /* app background */
+  --card:#ffffff;       /* content card background */
+  --panel:#e7e2df;      /* header + sections */
+  --muted:#cfcac8;
+  --dark:#3a3a3a;
+  --danger:#b44a4a;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Inter, system-ui, Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:#666;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:16px;
+}
+
+/* PHONE CONTAINER */
+#phone{
+  width:380px;
+  height:760px;
+  background:#2f2f2f;
+  border-radius:24px;
+  padding:12px;
+  box-shadow:0 8px 0 rgba(0,0,0,.45);
+  overflow:hidden;
+  position:relative;
+}
+
+/* FULL SCREEN BASE */
+.screen{
+  width:100%;
+  height:100%;
+  background:var(--bg);
+  border-radius:14px;
+  overflow:auto;
+  position:absolute;
+  top:0;
+  left:0;
+  padding-bottom:70px; /* for bottom nav */
+}
+
+/* Hidden */
+.hidden{display:none !important;}
+
+/* ---------------------
+      SPLASH / LOGIN
+---------------------- */
+.app-card{
+  width:88%;
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  margin:auto;
+}
+
+#login{
+  display:flex;
+  justify-content:center;
+  align-items:center; /* <-- centers vertically */
+}
+
+#login .app-card{
+  margin-top:0;
+  width:80%;
+  padding:20px;
+}
+
+/* Buttons */
+.primary-btn{
+  background:var(--dark);
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  width:100%;
+}
+
+.secondary-btn{
+  background:var(--muted);
+  color:var(--dark);
+  border:none;
+  padding:10px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  width:100%;
+}
+
+.danger-btn{
+  background:var(--danger);
+  color:#fff;
+  border:none;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+  width:100%;
+}
+
+/* Inputs */
+input, textarea, select{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border:1px solid #d4d1cf;
+  border-radius:8px;
+  background:#fff;
+}
+
+/* Error */
+.error{ color:#c74040; font-size:13px; text-align:center; margin-top:6px; }
+
+/* ---------------------
+       TOP HEADER BAR
+---------------------- */
+.top-bar{
+  color: #d0ccc8;  
+  width:100%;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;     
+  align-items:center;
+  font-weight:600;
+  border-bottom:1px solid #d6d1cd;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.top-actions{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.top-bar button.small{
+  padding:6px 10px;
+  border:1px solid #aaa;
+  border-radius:8px;
+  background:#fff;
+  cursor:pointer;
+}
+
+/* ---------------------
+      APP CONTENT
+---------------------- */
+.app-screen{
+  padding:0;
+  margin-top:54px; /* header height */
+}
+
+.content{
+  padding:14px;
+}
+
+.cardish{
+  background:var(--card);
+  border-radius:12px;
+  padding:16px;
+}
+
+/* Force white panels to fill screen width */
+#home-screen .cardish,
+#inventory-screen .cardish,
+#calendar-screen .cardish,
+#settings-screen .cardish{
+  margin:0;
+  border-radius:0;
+  min-height:calc(100vh - 110px); /* fits screen fully */
+}
+
+/* Lists */
+.list{
+  list-style:none;
+  padding:0;
+  margin:10px 0;
+}
+
+.list li{
+  padding:10px;
+  background:#f7f5f4;
+  border-radius:8px;
+  margin-bottom:8px;
+  font-size:14px;
+}
+
+/* Search bar */
+#search-inv{
+  margin-bottom:12px;
+}
+
+/* Summary bars */
+.summary .item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:10px 0;
+}
+
+.summary .bar{
+  height:12px;
+  background:#ddd;
+  border-radius:6px;
+  flex:1;
+  margin-left:8px;
+  position:relative;
+}
+
+.summary .bar > i{
+  display:block;
+  height:100%;
+  background:#444;
+  border-radius:6px;
+}
+
+/* ---------------------
+      BOTTOM NAV
+---------------------- */
+.bottom-nav{
+  position:absolute;
+  bottom:12px;
+  left:12px;
+  right:12px;
+  height:54px;
+  background:var(--panel);
+  border-radius:12px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:6px;
+  border:1px solid #d0ccc8;
+}
+
+.nav-btn{
+  background:transparent;
+  border:none;
+  padding:10px;
+  cursor:pointer;
+  border-radius:8px;
+  font-weight:600;
+  color:var(--dark);
+}
+
+.nav-btn.active{
+  background:#d6d3d1;
+}
+
+/* ---------------------
+      CALENDAR
+---------------------- */
+.calendar-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.calendar-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:5px;
+  margin-top:10px;
+}
+
+.calendar-grid .day{
+  height:46px;
+  background:#f7f5f4;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+}
+
+/* ---------------------
+      DETAILS PAGE
+---------------------- */
+.image-box{
+  height:120px;
+  background:#f5f4f2;
+  border-radius:8px;
+  margin:14px 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.note-box{
+  background:#f7f5f4;
+  padding:10px;
+  border-radius:8px;
+  margin:10px 0;
+}
+
+/* Toast */
+.toast{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:80px;
+  background:#333;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+}
