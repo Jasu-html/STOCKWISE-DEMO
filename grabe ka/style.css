@@ -1,6 +1,6 @@
 /* -----------------------------------------------------
    StockWise - Inventory Management Styles
-   Sophisticated monochrome palette with clean aesthetics
+   
    Designed for clarity and focus
 ------------------------------------------------------ */
 
@@ -9,33 +9,33 @@
    Refined monochrome scheme for professional use
 ---------------- */
 :root {
-    --bg: #E3E4E6;               /* Light Grey - app background */
-    --card: #F8F1E9;             /* Soft Cream - content card background */
-    --panel: #1A1A1A;            /* Black/Very Dark Grey - header & navigation */
-    --muted: #D9DADA;            /* Pale Grey - subtle backgrounds and dividers */
-    --dark: #1A1A1A;             /* Black/Very Dark Grey - primary text */
-    --primary: #7A7A7A;          /* Medium Grey - main action color */
-    --primary-dark: #555555;     /* Medium-Dark Grey - darker for depth */
-    --danger: #8B0000;           /* Dark Red - attention needed */
-    --danger-dark: #5A0000;      /* Deeper Red - stronger warning */
-    --warning: #B8860B;          /* Dark Goldenrod - caution */
-    --success: #2E8B57;          /* Sea Green - success */
-    --text: #1A1A1A;             /* Main content text - very dark grey */
-    --text-light: #555555;       /* Supporting text - medium-dark grey */
-    --border: #C0C1C2;           /* Light border between elements */
-    --shadow: 0 4px 12px rgba(26,26,26,0.08);     /* Subtle dark shadows */
-    --shadow-light: 0 2px 6px rgba(26,26,26,0.05); /* Even softer shadows */
-    --radius: 12px;              /* Rounded corners for modern feel */
-    --radius-sm: 8px;            /* Smaller rounded corners */
+    --bg: #E3E4E6;               
+    --card: #F8F1E9;              
+    --panel: #1A1A1A;            
+    --primary: #7A7A7A;          
+    --primary-dark: #555555;     
+    --muted: #D9DADA;            
+    --dark: #1A1A1A;             
+    --danger: #8B0000;           
+    --danger-dark: #5A0000;      
+    --warning: #B8860B;          
+    --border: #C0C1C2;           
+    --success: #2E8B57;          
+    --text: #1A1A1A;             
+    --text-light: #555555;       
+    --shadow: 0 4px 12px rgba(26,26,26,0.08);     
+    --shadow-light: 0 2px 6px rgba(26,26,26,0.05); 
+    --radius: 12px;             
+    --radius-sm: 8px;            
     
     /* New login page colors */
-    --login-bg: #D9D9D9;         /* Light Gray Background (Outer Background) */
-    --login-panel: #FFFFFF;      /* White Panel / Container Background */
-    --login-form: #F8EDE7;       /* Light Peach Form Background */
-    --login-input: #D6D6D6;      /* Input Field Gray */
-    --login-text: #222222;       /* Dark Text (Labels) */
-    --login-button: #4A4A4A;     /* Dark Gray Button Background */
-    --login-button-text: #FFFFFF; /* Button Text (White) */
+    --login-bg: #D9D9D9;         
+    --login-panel: #FFFFFF;      
+    --login-form: #F8EDE7;       
+    --login-input: #D6D6D6;      
+    --login-text: #222222;       
+    --login-button: #4A4A4A;     
+    --login-button-text: #FFFFFF; 
   }
   
   /* ----------------
@@ -68,13 +68,13 @@
   #phone {
     width: 380px;
     height: 760px;
-    background: #1A1A1A;            /* Dark bezel for contrast */
+    background: #1A1A1A;            
     border-radius: 36px;
     padding: 12px;
     box-shadow: 
-      0 20px 50px rgba(26,26,26,0.3),   /* Deep shadow for realism */
-      0 0 0 1px rgba(255,255,255,0.05), /* Subtle light border */
-      inset 0 1px 0 rgba(255,255,255,0.05); /* Screen inset effect */
+      0 20px 50px rgba(26,26,26,0.3),   
+      0 0 0 1px rgba(255,255,255,0.05), 
+      inset 0 1px 0 rgba(255,255,255,0.05); /
     overflow: hidden;
     position: relative;
   }
@@ -123,7 +123,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Monochrome gradient matching the palette */
+    
     background: linear-gradient(135deg, #555555 0%, #1A1A1A 100%);
     color: white;
     padding: 30px 20px;
@@ -162,7 +162,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF; /* White text on grey background */
+    color: #FFFFFF; 
     font-size: 28px;
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(122,122,122,0.2);
@@ -184,13 +184,13 @@
   }
   
   /* ----------------------------------------------------
-     Login Screen - Updated with new color scheme
+     Login Screen e
   ---------------------------------------------------- */
   #login {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--login-bg); /* Light Gray Background */
+    background: var(--login-bg); 
     padding: 20px;
   }
   
@@ -199,7 +199,7 @@
     width: 100%;
     max-width: 320px;
     padding: 32px 28px;
-    background: var(--login-panel); /* White Panel Background */
+    background: var(--login-panel); 
     border-radius: 24px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     animation: fadeInUp 0.4s ease-out;
@@ -207,7 +207,7 @@
   
   /* Login form container */
   .login-form-container {
-    background: var(--login-form); /* Light Peach Form Background */
+    background: var(--login-form); 
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 24px;
@@ -216,7 +216,7 @@
   #login h2 {
     text-align: center;
     margin-bottom: 28px;
-    color: var(--login-text); /* Dark Text */
+    color: var(--login-text);
     font-weight: 700;
     font-size: 24px;
   }
@@ -225,7 +225,7 @@
     display: block;
     margin: 20px 0 8px;
     font-weight: 600;
-    color: var(--login-text); /* Dark Text */
+    color: var(--login-text); 
     font-size: 14px;
   }
   
@@ -236,7 +236,7 @@
     margin: 8px 0 16px;
     border: 1px solid var(--login-input);
     border-radius: var(--radius-sm);
-    background: var(--login-input); /* Input Field Gray */
+    background: var(--login-input); 
     font-size: 15px;
     transition: all 0.2s;
     color: var(--login-text);
@@ -244,15 +244,15 @@
   
   #login input:focus {
     outline: none;
-    border-color: var(--login-button); /* Dark Gray for focus */
+    border-color: var(--login-button); 
     background: #FFFFFF;
     box-shadow: 0 0 0 3px rgba(74, 74, 74, 0.1);
   }
   
   /* Login-specific button */
   #login .primary-btn {
-    background: var(--login-button); /* Dark Gray Button Background */
-    color: var(--login-button-text); /* White Button Text */
+    background: var(--login-button); 
+    color: var(--login-button-text); 
     border: none;
     padding: 16px 20px;
     border-radius: var(--radius-sm);
@@ -295,7 +295,7 @@
   .primary-btn {
     /* Using the specified medium grey for buttons */
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: #FFFFFF; /* White text as specified */
+    color: #FFFFFF; 
     border: none;
     padding: 14px 20px;
     border-radius: var(--radius-sm);
@@ -407,7 +407,7 @@
   
   /* -------------------------------------------------
      Top Header Bar
-     Dark header for contrast
+     
   ------------------------------------------------- */
   .top-bar {
     background: var(--panel);
@@ -487,7 +487,7 @@
     padding-top: 24px;
   }
   
-  /* Add Item Button - using success color from the palette */
+  
   .add-item {
     background: linear-gradient(135deg, var(--success) 0%, #1E6B3A 100%);
     color: #FFFFFF;
@@ -916,4 +916,5 @@
   .status-safe { 
     background: rgba(46,139,87,0.1); 
     color: var(--success); 
+
   }
